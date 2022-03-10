@@ -5,7 +5,7 @@ public class a
 	public static void main(String[] args)
 	{
 		System.out.println("ют╥б");
-		String a,c;
+		String a,c,p,q;
 		int b,i,j,k,x=0,y,z,r;
 		Scanner s=new Scanner(System.in);
 		a=s.next();
@@ -23,9 +23,10 @@ public class a
 					y=j+k;
 					if(y>=z)
 						y=y-z;
-					if(a.substring(k,k+1)!=c.substring(y,y+1))
+					p=a.substring(k,k+1);
+					q=c.substring(y,y+1);
+					if(!(p.equals(q)))
 					{
-						System.out.println(a.substring(k,k+1)+" "+c.substring(y,y+1));
 						r=1;
 						break;
 					}
